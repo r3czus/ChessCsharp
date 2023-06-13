@@ -86,7 +86,7 @@ namespace ConsoleApp6
 
             Console.WriteLine(game.theBoard[0].AllowedMove());
 
-        }
+        } // wyświtla aktualny stan gry
 
        
        
