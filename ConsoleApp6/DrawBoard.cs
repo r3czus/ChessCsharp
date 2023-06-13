@@ -60,7 +60,7 @@ namespace ConsoleApp6
                     }
                     Console.Write("│");
                     
-                    if( !game.CheckTheColor(i, j))
+                    if( game.CheckTheColor(i, j))
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.Write($" {board[i, j]} ");
@@ -68,7 +68,6 @@ namespace ConsoleApp6
                     }
                     else
                     {
-
                         Console.Write($" {board[i, j]} ");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
@@ -84,6 +83,8 @@ namespace ConsoleApp6
             {
                 Console.WriteLine( $"{k}  {game.theBoard[k].kind}  {game.theBoard[k].curentlyPositionX} {game.theBoard[k].curentlyPositionY} ");
             }
+
+            Console.WriteLine(game.theBoard[0].AllowedMove());
 
         }
 

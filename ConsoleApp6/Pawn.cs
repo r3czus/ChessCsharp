@@ -19,10 +19,10 @@ namespace ConsoleApp6
         
         }
 
-        public void AllowedMove()
+        public override int AllowedMove()
         {
 
-            
+            return 43;   
 
         }
 

@@ -20,5 +20,11 @@ namespace ConsoleApp6
             firstMove = false;
 
         }
+        public override int AllowedMove()
+        {
+
+            return 43;
+
+        }
     }
 }

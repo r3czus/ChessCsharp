@@ -18,5 +18,11 @@ namespace ConsoleApp6
             curentlyPositionY = y;
             
         }
+        public override int AllowedMove()
+        {
+
+            return 43;
+
+        }
     }
 }

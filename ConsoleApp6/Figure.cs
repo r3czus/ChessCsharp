@@ -13,7 +13,7 @@ namespace ConsoleApp6
         public int curentlyPositionX { get; set; }
         public int curentlyPositionY { get;set; }
 
-      
+        public abstract int AllowedMove();
 
 
 

@@ -48,6 +48,7 @@
     <Compile Include="Figure.cs" />
     <Compile Include="GamePlayMechanic.cs" />
     <Compile Include="King.cs" />
+    <Compile Include="Knight.cs" />
     <Compile Include="Pawn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

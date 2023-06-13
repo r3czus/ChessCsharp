@@ -14,10 +14,16 @@ namespace ConsoleApp6
         {
 
             isWhite = w;
-            kind = "P";
+            kind = "Q";
             curentlyPositionX = x;
             curentlyPositionY = y;
             
+
+        }
+        public override int AllowedMove()
+        {
+
+            return 43;
 
         }
     }
