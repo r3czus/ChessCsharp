@@ -42,9 +42,6 @@ namespace ConsoleApp6
             }
 
 
-
-
-
             return resolut;
 
         }
