@@ -25,12 +25,12 @@ namespace ConsoleApp6
         {
             Sizex = 8;
             Sizey = 8;
-            PrepareyBoard();
+            SetTheMap();
             ShowBoard();
             
-
         }
-        void PrepareyBoard()
+
+        void SetTheMap()
         {
             for (int i = 0; i < Sizex ; i++)
             {
@@ -60,7 +60,7 @@ namespace ConsoleApp6
                     }
                     Console.Write("│");
                     
-                    if( game.CheckTheColor(i, j))
+                    if( !game.CheckTheColor(i, j))
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.Write($" {board[i, j]} ");
@@ -78,15 +78,14 @@ namespace ConsoleApp6
             }
            
             Console.WriteLine(" ┴───┴───┴───┴───┴───┴───┴───┴───┘");
-            
-            for(int k=0; k<game.theBoard.Count; k++)
-            {
-                Console.WriteLine( $"{k}  {game.theBoard[k].kind}  {game.theBoard[k].curentlyPositionX} {game.theBoard[k].curentlyPositionY} ");
-            }
 
+            Console.WriteLine(game.theBoard[0].curentlyPositionX);
+            Console.WriteLine(game.theBoard[0].curentlyPositionY);
             Console.WriteLine(game.theBoard[0].AllowedMove());
 
         } // wyświtla aktualny stan gry
+
+        
 
        
        

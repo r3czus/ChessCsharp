@@ -11,7 +11,13 @@ namespace ConsoleApp6
         static void Main(string[] args)
         {
             DrawBoard board= new DrawBoard();
+            
+            Console.WriteLine("\n   1 ruch białego\n");
+
+
+
             Console.ReadLine();
+
         }
     }
 }

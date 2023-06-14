@@ -56,7 +56,7 @@ namespace ConsoleApp6
             theBoard.Add(new Queen(7, 3, false));//dodanie królowej
 
 
-        }
+        }//ustawienie figur
         public string CheckTheCell(int x , int y)
         {
             string result = " ";
@@ -70,7 +70,7 @@ namespace ConsoleApp6
             }
             return result;
                 
-        }
+        }//sprawdzanie na którym polu jest jaka figura
 
         public bool CheckTheColor(int x, int y)
         {
@@ -84,9 +84,9 @@ namespace ConsoleApp6
 
             }
             return result;
-        }
+        }// sprawdzanie czy figura jest biała czy czarna
 
-        public int AllowedMove(int x, int y ) { return 1; }
+        
         
 
 

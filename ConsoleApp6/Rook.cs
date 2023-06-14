@@ -19,10 +19,10 @@ namespace ConsoleApp6
             firstMove = false;
 
         }
-        public override int AllowedMove()
+        public override string AllowedMove()
         {
-
-            return 43;
+            string resolut = "";
+            return resolut;
 
         }
     }
