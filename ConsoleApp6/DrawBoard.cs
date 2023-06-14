@@ -79,10 +79,10 @@ namespace ConsoleApp6
            
             Console.WriteLine(" ┴───┴───┴───┴───┴───┴───┴───┴───┘");
 
-            Console.WriteLine(game.theBoard[0].curentlyPositionX);
-            Console.Write(game.theBoard[0].curentlyPositionY);
+            Console.WriteLine(game.theBoard[9].curentlyPositionX);
+            Console.Write(game.theBoard[9].curentlyPositionY);
             Console.WriteLine("\n");
-            Console.WriteLine(game.theBoard[0].AllowedMove());
+            Console.WriteLine(game.theBoard[9].AllowedMove());
 
         } // wyświtla aktualny stan gry
 

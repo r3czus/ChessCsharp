@@ -22,8 +22,32 @@ namespace ConsoleApp6
         public override string AllowedMove()
         {
             string resolut = "";
+
+            for(int i = 1; i < 8; i++)
+            {
+                if( curentlyPositionY + curentlyPositionY+1 < 8)
+                resolut = resolut+ $"{curentlyPositionX},{curentlyPositionY+i}. ";
+
+                if (curentlyPositionY + curentlyPositionY - 1 >= 0)
+                    resolut = resolut + $"{curentlyPositionX},{curentlyPositionY - i}. ";
+            }
+            for (int i = 1; i < 8; i++)
+            {
+                if( curentlyPositionX + curentlyPositionX+1 < 8)
+                resolut = resolut + $"{curentlyPositionX+i},{curentlyPositionY }. ";
+
+                if (curentlyPositionX + curentlyPositionX - 1 >= 0)
+                    resolut = resolut + $"{curentlyPositionX - i},{curentlyPositionY}. ";
+
+            }
+
+
+
+
+
             return resolut;
 
         }
+        
     }
 }

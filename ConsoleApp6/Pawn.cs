@@ -19,7 +19,7 @@ namespace ConsoleApp6
         
         }
 
-        public override string AllowedMove()
+        public override string AllowedMove() //sprawdzanie wszystkich dostępnych ruchów dla  pionka 
         {
             string result="";
 
