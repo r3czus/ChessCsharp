@@ -34,11 +34,11 @@ namespace ConsoleApp6
         {
             for (int i = 0; i < Sizex ; i++)
             {
-                for (int j = 0; j < Sizey; j++)
+                for (int j = 0; j < Sizey; j++)// odpowiada za x
                 {
                   
-                      string value= game.CheckTheCell(i, j);
-                      board[i, j] = value;
+                      string value= game.CheckTheCell(j, i);
+                      board[j, i] = value;
 
                 }
             }
@@ -60,15 +60,15 @@ namespace ConsoleApp6
                     }
                     Console.Write("│");
                     
-                    if( !game.CheckTheColor(i, j))
+                    if( !game.CheckTheColor(j, i))
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.Write($" {board[i, j]} ");
+                        Console.Write($" {board[j, i]} ");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     else
                     {
-                        Console.Write($" {board[i, j]} ");
+                        Console.Write($" {board[j, i]} ");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     
@@ -80,7 +80,8 @@ namespace ConsoleApp6
             Console.WriteLine(" ┴───┴───┴───┴───┴───┴───┴───┴───┘");
 
             Console.WriteLine(game.theBoard[0].curentlyPositionX);
-            Console.WriteLine(game.theBoard[0].curentlyPositionY);
+            Console.Write(game.theBoard[0].curentlyPositionY);
+            Console.WriteLine("\n");
             Console.WriteLine(game.theBoard[0].AllowedMove());
 
         } // wyświtla aktualny stan gry

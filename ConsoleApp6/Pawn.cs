@@ -27,25 +27,24 @@ namespace ConsoleApp6
             {
                 if(isWhite)
                 {
-                     result = $"{curentlyPositionX},{curentlyPositionY + 1}.";
+                     result = $"{curentlyPositionX},{curentlyPositionY + 2}.";
                     
                 }
                 else
                 {
-                    result = $"{curentlyPositionX},{curentlyPositionY - 1}.";
+                    result = $"{curentlyPositionX},{curentlyPositionY - 2}.";
                 }
             }
-            else
-            {
+
                 if (isWhite)
                 {
-                    result = result + $"{curentlyPositionX},{curentlyPositionY + 2}.";
+                    result = result + $"{curentlyPositionX},{curentlyPositionY + 1}.";
                 }
                 else
                 {
-                    result = result + $"{curentlyPositionX},{curentlyPositionY - 2}.";
+                    result = result + $"{curentlyPositionX},{curentlyPositionY - 1}.";
                 }
-            }
+            
             return result;
 
         }
