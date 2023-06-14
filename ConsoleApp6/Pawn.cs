@@ -27,7 +27,7 @@ namespace ConsoleApp6
             {
                 if(isWhite)
                 {
-                     result =$"{curentlyPositionX},{curentlyPositionY + 1}.";
+                     result = $"{curentlyPositionX},{curentlyPositionY + 1}.";
                     
                 }
                 else
@@ -43,7 +43,7 @@ namespace ConsoleApp6
                 }
                 else
                 {
-                    result = result + $"{curentlyPositionX},{curentlyPositionY  -2}.";
+                    result = result + $"{curentlyPositionX},{curentlyPositionY - 2}.";
                 }
             }
             return result;
