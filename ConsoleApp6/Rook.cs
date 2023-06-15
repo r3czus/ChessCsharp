@@ -19,7 +19,7 @@ namespace ConsoleApp6
             firstMove = false;
 
         }
-        public override string AllowedMove()
+        public override string AllowedMove()// wszystkie dostępne ruchy dla wieży bez uwzględnienia pionków 
         {
             string resolut = "";
 
