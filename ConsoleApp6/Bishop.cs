@@ -20,8 +20,17 @@ namespace ConsoleApp6
         }
         public override string AllowedMove()
         {
-            string resolut = "";
-            return resolut;
+            string result = "";
+
+            for(int i = 0; i < 8;i++)
+            {
+                if(curentlyPositionX>0 || curentlyPositionY>0)
+                result = $"{curentlyPositionX + 1},{curentlyPositionY + 1}";
+            }
+            
+
+
+            return result;
 
         }
     }
